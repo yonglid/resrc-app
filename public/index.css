@@ -1,0 +1,48 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+
+* {
+box-sizing: border-box;
+font-family: 'Roboto', Helvetica, 'Lucida Grande', sans-serif;
+}
+#root {
+  height: 100%; 
+  width: 100%; 
+  color: #fff; 
+  display:table; 
+  align-content: center;
+}
+body {
+  text-align: center;
+  background-color: white;
+  color: black;
+  height: 97vh;   
+}
+/* app is child of root; it's parent of navigation bar, current view  */
+.app{
+  color: black; 
+  height: 100%; 
+  width: 100%; 
+  display: flex; 
+  align-content: center; 
+  justify-content: center;
+  padding-top:5%; 
+  padding-bottom: 5%; 
+}
+/* always in center of page view  */
+.current-view {
+  position: absolute; 
+  align-self: center; 
+}
+li {
+  list-style:none; 
+}
+/* .next{
+  p 
+} */
+.navigation-bar {
+  /* absolute snaps Resourceful and navigation bar together */
+  position: absolute; 
+  display:table-cell; 
+  background-color: black;
+  align-self: flex-end;
+}
