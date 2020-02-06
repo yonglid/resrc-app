@@ -1,3 +1,16 @@
+Running the app (@Allison Kao from Emily Dich) 
+git clone the resrc-app repo
+open two terminals
+navigate both terminals to where resrc-app is cloned
+in one terminal, run: npm run live-server 
+in the other terminal, run: npm start 
+you should automatically have opened localhost:8080; otherwise, go to that link to see the very minimal prototype 
+
+focus on CSS elements related to our figma wireframe
+
+-----------
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
