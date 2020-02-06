@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Switch, Route, Router, Link} from 'react-router';
+
 class NavigationSquare extends React.Component {
   render() {
     return (
@@ -9,18 +11,43 @@ class NavigationSquare extends React.Component {
     );
   }
 }
+
+class SearchPage extends React.Component {
+  render(){
+    return(
+      <div>
+        SEARCH PAGE IN PROGRESS...
+      </div>
+    )
+  }
+}
+
 class NavigationBar extends React.Component {
   renderNavigationSquares(i){
     return <NavigationSquare label={i} />; 
   }
   render(){
     return (
-      <div className="navigation-bar">
-        {this.renderNavigationSquares("Search")}
-        {this.renderNavigationSquares("Saved")}
-        {this.renderNavigationSquares("Profile")}
-        {this.renderNavigationSquares("More")}
-      </div> 
+      // <Router>
+        <div className="navigation-bar">
+          {/* <Link to="/search"> */}
+            {this.renderNavigationSquares("Search")}
+          {/* </Link> */}
+          {/* <Link to="/saved"> */}
+            {this.renderNavigationSquares("Saved")}
+          {/* </Link> */}
+          
+          {this.renderNavigationSquares("Profile")}
+          {this.renderNavigationSquares("More")}
+        {/* <Switch>
+          <Route path="/search">
+            <SearchPage />
+          </Route>
+        </Switch>  */}
+        </div> 
+        
+      // </Router>
+      
     )
     
   }
@@ -112,11 +139,12 @@ class CurrentPage extends React.Component {
 class App extends React.Component {
     render() {
       return (
-        <div className="app">
+          <div className="app">
           RESOURCEFUL
           <CurrentPage />
           <NavigationBar />
         </div>
+        
       );
     }
   }
@@ -125,3 +153,6 @@ ReactDOM.render(
     <App />,
     document.getElementById('root')
   );
+
+  // how to run the code 
+  // src folder has jsx 

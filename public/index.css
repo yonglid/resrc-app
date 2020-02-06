@@ -23,6 +23,7 @@ body {
   height: 100%; 
   width: 100%; 
   display: flex; 
+  display: -webkit-flex; 
   align-content: center; 
   justify-content: center;
   padding-top:5%; 
@@ -45,4 +46,5 @@ li {
   display:table-cell; 
   background-color: black;
   align-self: flex-end;
+  -webkit-box-align: end; 
 }
